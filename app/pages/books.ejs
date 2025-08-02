@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Table</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+  <body class="p-4">
+    <h1>Book Table</h1>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for(let x of bookList) { %>
+
+        <tr>
+          <td><%= x.title %></td>
+          <td><%= x.author %></td>
+          <td><%= x.year %></td>
+        </tr>
+
+        <% } %>
+      </tbody>
+    </table>
+
+    <a href="/add-book" class="btn btn-secondary">Add a New Book</a>
+    <a href="/add-book" class="btn btn-secondary">Add a New Book</a>
+  </body>
+</html>
